@@ -5,7 +5,26 @@
   </head>
 
   <body>
+    <h1>input type="number" click down instead of up demo</h1>
+    Instructions
+    <ol>
+      <li>Reload window</li>
+      <li>Do not hover on any elements</li>
+      <li>Unfocus this window</li>
+      <li>Aim at the invisible up button</li>
+      <li>Click once to focus the window</li>
+      <li>Without moving, click again</li>
+      <li>Confirm you have clicked the up button</li>
+      <li>Note it decremented</li>
+      <li>You can keep decrementing until you move the cursor</li>
+    </ol>
+    <p>Bug occurs at all font-sizes.</p>
+
+    It seems like once you have hovered over the up/down buttons the bug is no long reproduciable until reload. However hovering over just the input (and not the up/down buttons), then unfocusing the window still allows the bug to be reproduced.
+
+    <h2>Default font-size</h2>
     <input type="number" value="0" />
+    <h2>font-size: 32px</h2>
     <input type="number" value="0" style="font-size: 32px" />
   </body>
 </html>
